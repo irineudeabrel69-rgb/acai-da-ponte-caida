@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FAF7F2" />
+    <meta name="description" content="Monte seu açaí e faça seu pedido para retirada na Açaí da Ponte, em Sena Madureira." />
+    <title>Açaí da Ponte — Sena Madureira</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Açaí da Ponte, início">
+        <span class="brand-mark" aria-hidden="true">açaí</span>
+        <span class="brand-copy"><strong>Açaí da Ponte</strong><small>Sena Madureira · AC</small></span>
+      </a>
+      <nav class="header-nav" aria-label="Navegação principal"><a href="#nossa-historia">Nossa história</a><a class="header-order" href="#monte">Monte o seu <span aria-hidden="true">↓</span></a></nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Seu açaí, do seu jeito</p>
+          <h1 id="hero-title">Uma pausa gostosa<br />no seu dia.</h1>
+          <p class="hero-description">Escolha seu copo, combine seus favoritos e peça para retirar com a gente.</p>
+          <div class="store-status"><span class="status-dot" aria-hidden="true"></span><span id="store-status-text">Conferindo horário…</span><span class="status-divider">·</span><span>Todos os dias, 15h às 22h</span></div>
+          <a class="button button-primary hero-cta" href="#monte">Montar meu açaí <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1627308594190-a057cd4bfac8?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400" alt="Tigelas de açaí com banana, frutas vermelhas e granola" />
+          <span class="photo-note">Imagem ilustrativa</span>
+          <span class="hero-sticker" aria-hidden="true"><span>feito pra</span><strong>curtir</strong></span>
+        </div>
+      </section>
+
+      <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Cardápio</p><h2 id="menu-title">Escolha seu tamanho</h2></div>
+          <p class="section-side-note">3 complementos<br />inclusos por copo.</p>
+        </div>
+        <div class="size-grid" id="sizes" role="radiogroup" aria-label="Tamanho do copo"></div>
+      </section>
+
+      <section class="builder-section" id="monte" aria-labelledby="builder-title">
+        <div class="builder-intro">
+          <p class="eyebrow">Do seu jeito</p>
+          <h2 id="builder-title">Agora, os complementos.</h2>
+          <p>Os três primeiros são por nossa conta. Depois, você pode acrescentar outros por um valor adicional.</p>
+          <p class="selection-count" id="selection-count" aria-live="polite">0 de 3 escolhidos</p>
+        </div>
+        <div class="topping-grid" id="toppings"></div>
+      </section>
+
+      <section class="cart-section" id="cart" aria-labelledby="cart-title">
+        <div class="cart-heading"><div><p class="eyebrow">Resumo ao vivo</p><h2 id="cart-title">Seu pedido</h2></div><button class="repeat-button" id="repeat-order" type="button" disabled>↻ Repetir meu pedido</button></div>
+        <p class="cart-help" id="repeat-hint">Seu último pedido aparecerá aqui depois de abrir o WhatsApp.</p>
+        <ul class="cart-items" id="cart-items" aria-live="polite"><li class="empty-cart">Seu pedido aparecerá aqui conforme você escolhe.</li></ul>
+        <div class="cart-total-row"><span>Total do pedido</span><strong id="cart-total">R$ 0,00</strong></div>
+        <p class="cart-feedback" id="cart-feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="story-section" id="nossa-historia" aria-labelledby="story-title">
+        <div class="story-image-wrap"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1000" alt="Vegetação da floresta amazônica" loading="lazy" /><span class="photo-note">Imagem ilustrativa</span></div>
+        <div class="story-copy"><p class="eyebrow">Nossa história</p><h2 id="story-title">Da vida no campo, nasceu esse carinho.</h2>
+          <p>Antes de abrir a Açaí da Ponte, nossos caminhos começavam na zona rural. Foi por lá, entre a vida simples e o contato com a natureza, que nasceu a paixão pelo açaí e o desejo de compartilhar esse sabor com a nossa comunidade.</p>
+          <p>Hoje, levamos esse carinho para cada copo. Na história que inspira a marca, o açaí é colhido de forma orgânica, passa pela seleção cuidadosa dos grãos e chega às nossas mãos por meio das famílias extrativistas — gente que conhece e cuida da floresta.</p>
+          <p class="story-note">Texto ilustrativo criado para a apresentação da marca. As informações sobre origem orgânica e fornecedores precisam ser confirmadas antes de serem divulgadas como fatos.</p>
+        </div>
+      </section>
+
+      <section class="pickup-card" aria-labelledby="pickup-title">
+        <div class="pickup-icon" aria-hidden="true">⌖</div>
+        <div><p class="eyebrow">Seu pedido é para retirada</p><h2 id="pickup-title">A gente te espera por aqui.</h2><p>Rua Maranhão, 201 — Centro<br />Sena Madureira - AC · CEP 69940-000</p>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Maranh%C3%A3o%2C%20201%2C%20Centro%2C%20Sena%20Madureira%20AC%2069940-000" target="_blank" rel="noopener">Ver no mapa <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">açaí</span><span class="brand-copy"><strong>Açaí da Ponte</strong><small>Um carinho no seu dia.</small></span></a><span>Feito com carinho em Sena Madureira.</span></footer>
+
+    <aside class="order-bar" aria-label="Resumo do pedido">
+      <div class="order-summary"><span class="summary-label">Seu pedido <button class="reset-button" id="reset-order" type="button">Recomeçar</button></span><strong id="total-price" aria-live="polite">Escolha um copo</strong><span class="summary-detail" id="order-detail">Até 3 complementos incluídos</span></div>
+      <a class="button button-whatsapp is-disabled" id="whatsapp-order" href="#monte" aria-disabled="true">Pedir no WhatsApp <span aria-hidden="true">↗</span></a>
+    </aside>
+  </body>
+</html>
